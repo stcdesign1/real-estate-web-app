@@ -1,0 +1,211 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Real Estate Web App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <img src="https://www.dropbox.com/s/5t7en0hc3fwv8wz/ITM%20logo.jpg?raw=1" alt="logo" class="sidebar__logo">
+            <div class="sidebar__user">
+                <div class="sidebar__user-image"></div>
+                <div class="sidebar__user-details">
+                    <span>John Smith</span>
+                    <svg version="1.1" id="iconmonstr" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="23px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                        <path id="bell-2" d="M15,21c0,1.598-1.393,3-2.971,3C10.45,24,9,22.598,9,21H15z M15.137,3.945c-0.644-0.374-1.042-1.07-1.04-1.82  c0-0.001,0-0.002,0-0.003C14.097,0.95,13.157,0,12,0c-1.158,0-2.097,0.95-2.097,2.122c0,0.001,0,0.002,0,0.003  c0.001,0.751-0.396,1.446-1.041,1.82C4.194,6.654,6.877,15.66,2,17.252V19h20v-1.748C17.123,15.66,19.807,6.653,15.137,3.945z M12,1  c0.552,0,1,0.449,1,1c0,0.552-0.448,1-1,1s-1-0.448-1-1C11,1.449,11.448,1,12,1z M5.549,17c1.189-1.668,1.605-3.891,1.964-5.815  c0.447-2.39,0.869-4.648,2.354-5.509c1.38-0.801,2.956-0.76,4.267,0c1.485,0.861,1.906,3.119,2.354,5.509  c0.359,1.925,0.774,4.147,1.965,5.815H5.549z"/>
+                    </svg>
+                    <div class="sidebar__user--notification"></div>
+                </div>
+            </div>
+            <nav class="sidebar__nav">
+                <h3 class="sidebar__subheading h3-heading">
+                    Menu
+                </h3>
+                <ul>
+                    <li>Dashboard</li>
+                    <li>CRM</li>
+                    <li>Broker Requirements</li>
+                    <li>Tour Management</li>
+                    <li>Deal Room</li>
+                    <li>Properties</li>
+                    <li>Broker Directory</li>
+                    <li>Tenants ITM</li>
+                    <li>Analytics</li>
+                    <svg class="sidebar__logout" version="1.1" id="iconmonstr" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                        <path id="power-on-off-8" d="M14,12h-4V0h4V12z M18.213,1.754L17,3.353c2.984,1.732,5,4.955,5,8.647c0,5.515-4.486,10-10,10  S2,17.515,2,12c0-3.692,2.016-6.915,5-8.647L5.787,1.754C2.322,3.857,0,7.651,0,12c0,6.627,5.373,12,12,12s12-5.373,12-12  C24,7.651,21.678,3.857,18.213,1.754z"/>
+                    </svg>
+                    <li>Logout</li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <h1 class="h1-heading">Dashboard</h1>
+            <div class="full-width-column">
+                <div class="summary__card">
+                    <h3 class="h3-heading">Properties</h3>
+                    <span>81</span>
+                    <img class="properties__img" src="https://www.dropbox.com/s/g70iiqsbrnhl4q8/building-illustrationt.svg?raw=1" alt="building illustration">
+                    <div class="summary__card--circle"></div>
+                </div>
+                <div class="summary__card">
+                    <h3 class="h3-heading">Rentable Area</h3>
+                    <span>56,308,827</span>
+                    <span>rsf</span>
+                </div>
+                <div class="summary__card">
+                    <h3 class="h3-heading">Available</h3>
+                    <span>716,309</span>
+                    <span>rsf</span>
+                </div>
+                <div class="summary__card summary__card--deals">
+                    <h3 class="h3-heading">Active Deals</h3>
+                    <span>39</span>
+                    <img class="active-deals__img" src="https://www.dropbox.com/s/45bts3genhrewg3/active-deals-illustration.svg?raw=1" alt="active deals illustration">
+                    <div class="summary__card--circle"></div>
+                </div>
+                <div class="summary__card summary__card--deals">
+                    <h3 class="h3-heading">Unique Spaces</h3>
+                    <span>408</span>
+                    <span>rsf</span>
+                </div>
+                <div class="summary__card summary__card--deals">
+                    <h3 class="h3-heading">Unique Spaces sf</h3>
+                    <span>449,028</span>
+                    <span>rsf</span>
+                </div>
+            </div>
+            <div class="full-width-column">
+                <div class="main-column">
+                    <div class="card-main">
+                        <h2 class="h2-heading">Pinned Deals</h2>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="h3-heading">Property <img src="https://www.dropbox.com/s/i26y2hzt57plho8/arrow.svg?raw=1" alt="sort column icon"></th>
+                                    <th class="h3-heading">Floor <img src="https://www.dropbox.com/s/i26y2hzt57plho8/arrow.svg?raw=1" alt="sort column icon"></th>
+                                    <th class="h3-heading">Area <img src="https://www.dropbox.com/s/i26y2hzt57plho8/arrow.svg?raw=1" alt="sort column icon"></th>
+                                    <th class="h3-heading">Tenant <img src="https://www.dropbox.com/s/i26y2hzt57plho8/arrow.svg?raw=1" alt="sort column icon"></th>
+                                    <th class="h3-heading">Updated <img src="https://www.dropbox.com/s/i26y2hzt57plho8/arrow.svg?raw=1" alt="sort column icon"></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>41 Madison Avenue</td>
+                                    <td>E36</td>
+                                    <td>14151 RSF</td>
+                                    <td>JMB Holdings</td>
+                                    <td>Sep 13, 2019</td>
+                                    <td><img src="https://www.dropbox.com/s/b24vxqplu9l2t66/pin-icon.svg?raw=1" alt="pin icon"></td>
+                                </tr>
+                                <tr>
+                                    <td>255 Greenwich Street</td>
+                                    <td>P5</td>
+                                    <td>16669 RSF</td>
+                                    <td>Midland Corp</td>
+                                    <td>Sep 14, 2019</td>
+                                    <td><img src="https://www.dropbox.com/s/b24vxqplu9l2t66/pin-icon.svg?raw=1" alt="pin icon"></td>
+                                </tr>
+                                <tr>
+                                    <td>152 West 57th Street</td>
+                                    <td>E42, 43</td>
+                                    <td>19282 RSF</td>
+                                    <td>Midland Corp</td>
+                                    <td>Oct 02, 2019</td>
+                                    <td><img src="https://www.dropbox.com/s/b24vxqplu9l2t66/pin-icon.svg?raw=1" alt="pin icon"></td>
+                                </tr>
+                                <tr>
+                                    <td>255 Greenwich Street</td>
+                                    <td>P5</td>
+                                    <td>16669 RSF</td>
+                                    <td>Midland Corp</td>
+                                    <td>Sep 14, 2019</td>
+                                    <td><img src="https://www.dropbox.com/s/b24vxqplu9l2t66/pin-icon.svg?raw=1" alt="pin icon"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="card-main">
+                        <h2 class="h2-heading">Action Items</h2>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="h3-heading">Date <img src="https://www.dropbox.com/s/i26y2hzt57plho8/arrow.svg?raw=1" alt="sort column icon"></th>
+                                    <th class="h3-heading">Description</th>
+                                    <th class="h3-heading">Type <img src="https://www.dropbox.com/s/i26y2hzt57plho8/arrow.svg?raw=1" alt="sort column icon"></th>
+                                    <th class="h3-heading">RE</th>
+                                    <th class="h3-heading"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Oct 30, 2019</td>
+                                    <td>Summit Re</td>
+                                    <td>Call</td>
+                                    <td>Call dave.</td>
+                                    <td><button class="btn-small">Cancel</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Sep 03, 2019</td>
+                                    <td>Delos</td>
+                                    <td>Message</td>
+                                    <td></td>
+                                    <td><button class="btn-small">Cancel</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="side-column">
+                    <div class="notifications card-side">
+                        <h2 class="h2-heading">Notifications</h2>
+                        <div class="notifications__message">
+                            <p><em>From Paul Frischer</em> Dynamic Industries Landlord Response 1 for 255 Greenwich Street</p>
+                            <p class="notifications__date hr-line">Oct 21, 2019 at 09:56 AM</p>
+                        </div>
+                        <div class="notifications__message">
+                            <p><em>From Paul Frischer</em> Dynamic Industries Landlord Response 1 for 255 Greenwich Street</p>
+                            <p class="notifications__date">Oct 19, 2019 at 10:12 AM</p>
+                        </div>
+                        <div class="notifications__message">
+                            <p><em>From Paul Frischer</em> Dynamic Industries Landlord Response 1 for 255 Greenwich Street</p>
+                            <p class="notifications__date">Oct 18, 2019 at 02:44 PM</p>
+                        </div>
+                        <a href="#" class="text-link"><img src="https://www.dropbox.com/s/235cpek8l63xgap/link-arrow.svg?raw=1" alt="link arrow">View more</a>
+                    </div>
+                    <div class="newsfeed card-side">
+                        <h2 class="h2-heading">Newsfeed</h2>
+                        <div class="newsfeed__message">
+                            <img src="https://www.dropbox.com/s/axqvrilpu888r01/wsj.jpg?raw=1" alt="news website image">
+                            <div class="newsfeed__text">
+                                <p>Here are Amazon’s current office and warehouse holdings in NYC - and where it could set up shop next</p>
+                                <p class="newsfeed__date">Oct 21, 2019 at 10:56 AM</p>
+                            </div>
+                        </div>
+                        <div class="newsfeed__message">
+                            <img src="https://www.dropbox.com/s/32uffnm7h4t6cup/trd.jpg?raw=1" alt="news website image">
+                            <div class="newsfeed__text">
+                                <p>These were NYC’s top office leases in July</p>
+                                <p class="newsfeed__date">Sep 16, 2019 at 08:34 AM</p>
+                            </div>
+                        </div>
+                        <div class="newsfeed__message">
+                            <img src="https://www.dropbox.com/s/axqvrilpu888r01/wsj.jpg?raw=1" alt="news website image">
+                            <div class="newsfeed__text">
+                                <p>Here are Amazon’s current office and warehouse holdings in NYC - and where it could set up shop next</p>
+                                <p class="newsfeed__date">Sep 12, 2019 at 09:55 AM</p>
+                            </div>
+                        </div>
+                        <a href="#" class="text-link"><img src="https://www.dropbox.com/s/235cpek8l63xgap/link-arrow.svg?raw=1" alt="link arrow">View more</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
